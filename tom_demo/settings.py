@@ -184,6 +184,11 @@ CACHES = {
 # TOM Specific configuration
 TARGET_TYPE = 'SIDEREAL'
 
+TOM_FACILITY_CLASSES = [
+        'tom_demo.facilities.lco.LCOCustomFacility',
+        'tom_observations.facilities.gemini.GEMFacility',
+]
+
 FACILITIES = {
     'LCO': {
         'portal_url': 'https://observe.lco.global',
@@ -216,7 +221,6 @@ TOM_ALERT_CLASSES = [
     'tom_alerts.brokers.mars.MARSBroker',
     'tom_alerts.brokers.lasair.LasairBroker',
     'tom_alerts.brokers.scout.ScoutBroker',
-    'tom_alerts.brokers.antares.AntaresBroker'
 ]
 
 BROKER_CREDENTIALS = {
